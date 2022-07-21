@@ -1,0 +1,12 @@
+ESX = exports['es_extended']:getSharedObject()
+RegisterNetEvent("kanohFPSon")
+AddEventHandler("kanohFPSon",function()
+    SetTimecycleModifier("cinema")
+    ESX.ShowNotification("FPS Boost Activado")
+end)
+
+RegisterNetEvent("kanohFPSoff")
+AddEventHandler("kanohFPSoff",function()
+    SetTimecycleModifier("default")
+    ESX.ShowNotification("FPS Boost Desactivado")
+end)
